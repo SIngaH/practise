@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#000;
+        }
+        #testimonials{
+            color:#fff;
+            text-align:center;
+            width:50%;
+            display: block; 
+            margin:10% auto;
+        }
+        #testimonials h4, #testimonials p, #testimonials ul{
+            margin:3% 0;
+        }
+        #testimonials ul{
+            display:flex;
+            justify-content:center;
+        }
+        #testimonials ul li{
+            color:#fff;
+            list-style:none;
+            margin:0 2%;
+        }
+        #testimonials ul li a{
+            color:#fff;
+            text-decoration: none;
+        }
+        .fab{
+            padding:6px;
+            border:solid #fff 2px;
+            font-size:15px;
+        }
+        .fa-facebook-f{
+            padding:6px 8.6px;
+        }
+        .progress-boxes{
+            display:flex;
+            justify-content:center;
+        }
+        .progress-boxes .progress-box{
+            margin:0 1%;
+            width:10px;
+            height:10px;
+            background-color:#fff;
+        }
+        #pink{
+            background-color:red;
+        }
+        .other-gallery{
+            display:flex;
+            justify-content: space-evenly;
+            width:20%;
+            margin:0 auto;
+        }
+        #gallery-image{
+            padding:0 5%;
+        }
+        #back{
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <section id="testimonials">
+        <div class="testimonials-api-info">
+            
+        </div>
+
+        <div class="progress-boxes">
+            <div class="progress-box box1" id="pink"></div>
+            <div class="progress-box box2"></div>
+            <div class="progress-box box3"></div>
+        </div>
+    </section>
+    <section class="other-gallery">
+        <img src="./images/Play.svg" alt="back" id="back">
+        <img src="./images/testimonial_1.jpg" alt="gallery image 1" id="gallery-image">
+        <img src="./images/Play.svg" alt="next" id="next">
+    </section>
+
+    <script src="index.js"></script>
+    <script src="other-gallery.js"></script>
+    <script src="https://kit.fontawesome.com/2677b557d6.js"></script>
+</body>
+</html>

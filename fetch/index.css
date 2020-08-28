@@ -1,0 +1,52 @@
+html {
+    overflow-y: scroll;
+}
+.multible-get, .many-to-one{
+    display: flex;
+    flex-wrap: wrap;    
+}
+.event, .blog-post{
+    width: 25%;
+    border: solid 2px purple;
+    background-color: aqua;
+    padding: 1% 2%;
+    border-radius: 15px;
+    margin:1% 2%;
+}
+#error-message{
+    display:none;
+}
+.multible-posts form{
+    background-color:#000;
+    margin:2%;
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding:10%;
+}
+.multible-posts form input, .multible-posts form textarea{
+    border:solid 2px blueviolet;
+    background-color:aqua;
+    margin:0.5% 0;
+    padding:1% 0.5%;
+}
+.btn-error{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.multible-posts button{
+    border:solid 2px blueviolet;
+    background-color:aqua;
+    margin:0 0 0 auto;
+    padding:1% 3%;
+    text-transform: uppercase;
+}
+#contact-error-message{
+    color:red;
+    border:solid 2px red;
+    margin: 0;
+    padding: 1% 20%;
+    text-transform: capitalize;
+    display:none;
+}

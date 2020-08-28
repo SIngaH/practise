@@ -1,0 +1,30 @@
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width:30%;
+    margin:0 auto;
+}
+input{
+    margin:0.5% 0;
+    text-align:center;
+    border:solid 1px #000;
+}
+.form__answer {
+    display:none;
+    background-color:#000;
+    color:#fff;
+}
+.radio{
+    display:flex;
+    justify-content: left;
+}
+.form__radio_male, .form__radio_female{
+    margin-right:2%;
+}
+.form__checkbox{
+    margin-right:1%;
+}
+.form__select{
+    margin:2% 0;
+}

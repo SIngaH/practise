@@ -1,0 +1,61 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+} 
+#wrapper{
+    background-color: var(--black);
+    max-width:960px;
+    margin:0 auto;
+    font-family: 'Bangers', cursive;
+    font-family: 'Pangolin', cursive;
+}
+#nav{
+    background-color:purple;
+}
+#nav .ul1{
+    display: flex;
+    justify-content:space-evenly;
+    padding:2% 0;
+    flex-wrap: wrap;
+}
+#nav li{
+    list-style: none;
+    text-transform: uppercase;
+}
+#nav li a{
+    color:#000;
+    text-decoration: none;
+}
+#nav li a:hover{
+    text-decoration:underline;
+}
+#nav__ul-show-sub-menu{
+    cursor: pointer;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+    max-width: 960px;
+    z-index: 1;
+}
+
+#nav #hide{
+    display:none;
+    justify-content:space-around;
+    padding:2% 0;
+}
+/* just works in firefox*/
+@-moz-document url-prefix() {
+    #nav li a{
+      color:#fff;
+    }
+  }
+
+/* only works in chrome and IE*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@supports (not (-ms-accelerator:true))
+    and (not (-moz-appearance:none)) {
+    #nav li a { color:red; } 
+} }

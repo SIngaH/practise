@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Fetch</title>
+</head>
+<body>
+    <section class="get">
+        <!-- getting from api -->
+    </section>
+
+    <section class="multible-get">
+        <!-- get many from api - they each lead to a single showing -->
+    </section>
+
+    <section class="post">
+        <h4>want the latest night club news</h4>
+        <form method="post" id="form" novalidate>
+            <input type="email" name="email" placeholder="enter your email" id="newsletter-email">
+            <button id="button">subscribe</button>
+            <p id="error-message"></p>
+        </form>
+    </section>
+
+    <section class="multible-posts">
+        <form method="post" class="contact-form" novalidate>
+            <input type="text" name="name" placeholder="Your Name" class="form__name">
+            <input type="email" name="email" placeholder="Your Email" class="form__email">
+            <input type="text" name="website" placeholder="Website.com" class="form__website">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Comment" class="form__comment"></textarea>
+            <div class="btn-error">
+                <p id="contact-error-message"></p>
+                <button>submit</button>
+            </div>
+        </form>
+    </section>
+    <secion class="many-to-one">
+        <!-- many, if you click one you go to a page with one -->
+    </secion>
+
+    <script src="js/get.js"></script>
+    <script src="js/multible-get.js"></script>
+    <script src="js/post.js"></script>
+    <script src="js/post-many.js"></script>
+    <script src="js/many-lead-to-one.js"></script>
+
+</body>
+</html>

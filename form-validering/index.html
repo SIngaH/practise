@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="GET" class="form" novalidate>
+        <div class="error-message"></div>
+<!-- name -->
+        <input name="name" class="form_input form__name" placeholder="First name">
+<!-- email -->
+        <input type="email" name="email" class="form_input form__email" placeholder="Email">
+<!-- confirm email -->
+        <input type="email" name="email2" class="form_input form__email2" placeholder="Confirm email">
+<!-- phone number -->
+        <input type="text" name="phoneNumber" class="form_input form__phone_number" placeholder="Phone number">
+<!-- website -->
+        <input type="text" name="website" class="form_input form__website" placeholder="Website.com">
+<!-- number -->
+        <input type="text" name="number" class="form_input form__number" placeholder="Number between 1-5">
+<!-- age -->
+        <input type="text" name="age" class="form_input form__age" placeholder="Age">
+<!-- textarea -->
+        <textarea name="comment" cols="30" rows="10" class="form_input form__comment"></textarea>
+<!-- radio -->
+        <div class="radio radio_male">
+                <input type="radio" name="choose" value="male" class="form_input form__radio_male">
+                <label class="radio__label_male" for="male">Male</label>
+        </div>
+        <div class="radio radio_female">
+                <input type="radio" name="choose" value="female" class="form_input form__radio_female">
+                <label class="radio__label_female" for="female">Female</label>
+        </div>
+<!-- checkbox -->
+        <div class="checkbox">
+                <input type="checkbox" name="agree" class="form_input form__checkbox">
+                <label class="form__checkbox_label" for="agree">Do you agree?</label>
+        </div>
+<!-- select -->
+        <select name="cars" class="form__select" form="carform">
+                <option value="choose">Choose a car</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+        </select>
+<!-- zip code -->
+        <input type="text" name="zip" class="form__zip" placeholder="Zip code">
+<!-- date -->
+        <input type="date" name="date" class="form_input form__date">
+        
+        <input type="submit" value="Submit" class="form__submit">
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!--check later
+                    <input type="datetime" name="" id="" placeholder="date">
+                    <input type="datetime-local" name="" id="" placeholder="date">
+
+-->

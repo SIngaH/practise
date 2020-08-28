@@ -1,0 +1,49 @@
+html {
+    /* stops the scroll bar from adding to the sites width */
+    overflow-y: scroll;
+}
+body{
+    background:url("../images/code-editoren-t.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    /* backgroyúnd gradient *//*
+    background-image: linear-gradient(red, yellow, green);
+    *//* an image on an image *//*
+    background-image: url("img_tree.gif"), url("paper.gif");
+    background-repeat: no-repeat, repeat;*/
+}
+/* Each New Word Has A Capital Letter */
+h1{
+    text-transform: capitalize;
+}
+/* ALL CAPS */
+h2{
+    text-transform: uppercase;
+}
+/* to center an img*/
+img{
+    display:block;
+    margin:0 auto;
+}
+
+@media only screen and (max-width: 900px){
+    h1{
+        color:blueviolet;
+    }
+}
+
+/* just works in firefox*/
+@-moz-document url-prefix() {
+    h1{
+      color:red;
+    }
+  }
+
+/* only works in chrome and IE*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@supports (not (-ms-accelerator:true))
+    and (not (-moz-appearance:none)) {
+    h1 { color:blue; } 
+} }
