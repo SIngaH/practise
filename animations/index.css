@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding:0;
+}
+#wrapper{
+    margin:0 auto;
+    max-width:1400px;
+}
+.space{
+    height:800px;
+}
+.articles{
+    display:flex;
+    justify-content:space-around;
+    margin-top:150px;
+    opacity: 0;
+    transform:translateY(10em); 
+}
+.change{
+    transition: all 3s ease-in-out;
+    transform:translateY(0em);
+    opacity: 1;
+    margin-top:0;
+}
+.spacer{
+    height:1000px;
+}
