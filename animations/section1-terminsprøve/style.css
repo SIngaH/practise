@@ -1,0 +1,42 @@
+#wrapper{
+    max-width:1440px;
+    margin:0 auto;
+}
+#three{
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-columns:repeat(3, 1fr);
+}
+#three img{
+    height:100%;
+    width:90%;
+}
+#three img:hover{
+    display:none;
+}
+#three img:hover ~ .hidden{
+    display:block;
+}
+#three img:hover .hidden{
+    display:block;
+}
+.hidden{
+    place-self:center;
+    display:none;
+    background-color:#000;
+    color:#fff;
+    height:100%;
+    width:90%;
+}
+.first{
+    grid-column:1;
+    display:block;
+}
+.second{
+    grid-column:2;
+    display:block;
+}
+.third{
+    grid-column:3;
+    display:block;
+}
