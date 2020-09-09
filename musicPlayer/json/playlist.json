@@ -1,0 +1,65 @@
+[
+    {
+        "songName": "Hooked on a Feeling",
+        "artists": "Blue Swede",
+        "cover":"Blue-Swede.jpg",
+        "coverAlt":"Blue Swede",
+        "mp3": "./music/Hooked_on_a_Feeling.mp3",
+        "duration":"02:47",
+        "duration_s":"1670"
+    },
+    {
+        "songName": "Home",
+        "artists": "Edward Sharpe & The Magnetic Zeroes",
+        "cover":"edward-sharpe.jpg",
+        "coverAlt":"Edward Sharpe",
+        "mp3": "./music/Home.mp3",
+        "duration":"03:11",
+        "duration_s":"1910"
+    },
+    {
+        "songName": "Bang Pop",
+        "artists": "Free Energy",
+        "cover":"free-energy.jpg",
+        "coverAlt":"Free Energy",
+        "mp3": "./music/Bang_Pop.mp3",
+        "duration":"03:41",
+        "duration_s":"1210"
+    },
+    {
+        "songName": "She's On My Mind",
+        "artists": "JP Cooper",
+        "cover":"jp-cooper.jpg",
+        "coverAlt":"JP Cooper",
+        "mp3": "./music/She's_On_My_Mind.mp3",
+        "duration":"02:59",
+        "duration_s":"1790"
+    },
+    {
+        "songName": "Cobrastyle",
+        "artists": "Teddybears",
+        "cover":"teddybears.jpg",
+        "coverAlt":"Teddybears",
+        "mp3": "./music/Cobrastyle.mp3",
+        "duration":"03:00",
+        "duration_s":"1800"
+    },
+    {
+        "songName": "White Night",
+        "artists": "The Postelles",
+        "cover":"the-postelles.jpg",
+        "coverAlt":"The Postelles",
+        "mp3": "./music/White_Night.mp3",
+        "duration":"02:38",
+        "duration_s":"1580"
+    },
+    {
+        "songName": "Renegades",
+        "artists": "X Ambassadors",
+        "cover":"x-ambassadors.jpg",
+        "coverAlt":"X Ambassadors",
+        "mp3": "./music/Renegades.mp3",
+        "duration":"03:14",
+        "duration_s":"1940"
+    }
+]
