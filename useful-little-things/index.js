@@ -28,8 +28,32 @@ function thisFunction(){
     clearInterval(myInterval);
   }
 }
-// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
-document.querySelector(".copy").addEventListener("click", ()=>{
 
-  document.execCommand("copy");
+//copy elements text to clipboard
+//https://jsfiddle.net/alvaroAV/a2pt16yq/
+document.querySelector("#copy-icon").addEventListener("click", ()=>{
+    let faCopy = document.querySelector("#copy-icon");
+      
+   faCopy.classList.add("link-copied");
+
+    setTimeout(() => {
+      faCopy.classList.remove("link-copied")
+    }, 2000);
+    
+    // Create an auxiliary hidden input
+    var aux = document.createElement("input");
+    // Get the text from the element passed into the input
+    aux.setAttribute("value", document.getElementById("copy-try").innerHTML);
+
+    // Append the aux input to the body
+    document.body.appendChild(aux);
+
+    // Highlight the content
+    aux.select();
+
+    // Execute the copy command
+    document.execCommand("copy");
+
+    // Remove the input from the body
+    document.body.removeChild(aux);
 })
