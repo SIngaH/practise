@@ -1,27 +1,30 @@
+//what site am i on
 console.log(window.location.href)
 console.log(window.location.href.includes("index"))
 
+//cutting a tex short
 let h1 = document.querySelector("h1");
-let h2 = document.querySelector("h1");
+let ul = document.querySelector("ul");
 /* make text shorter - 50 characters (including spaces) */
 let text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, amet autem assumenda hic tenetur, quasi magnam tempore et itaque molestiae quisquam optio libero deleniti aut nihil odio iure. Ea, iusto.";
 let shortenText = text.slice(0, 50);
 h1.innerHTML = shortenText + "...";
 
 /* for each with an index number */
-let fruits = ["first", "second", "third"];
+let fruits = ["first","second","third"];
 fruits.forEach(myFunction);
 
 function myFunction(item, index) {
-  h2.innerHTML += "<br>" + index + ":" + item + "<br>"; 
+  ul.innerHTML += "<li>" + index + ":" + item + "</li>"; 
 }
 
-/* set and clear interval (3000 = 3 sec) */
+/* set and clear interval (1000 = 1 sec) 
+it calls the function every second */
 let myInterval = setInterval(thisFunction, 1000);
 let h3 = document.querySelector("h3");
 let index = 0;
 function thisFunction(){
-  if(index < 3){
+  if(index < 6){
     index ++;
     h3.innerHTML = index;
   }else{
@@ -80,4 +83,5 @@ function shuffle(array){
         array[ctr] = array[i];
         array[i] = temp;
     }
+    return array;
 }

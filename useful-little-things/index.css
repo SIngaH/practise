@@ -23,10 +23,11 @@ h2{
     text-transform: uppercase;
 }
 /* to center an img*/
-img{
+#img{
     display:block;
     margin:0 auto;
 }
+
 .copy-link{
     display:flex;
     justify-content:start;
@@ -39,7 +40,6 @@ img{
 .link-copied{
     animation: copied 2s forwards linear;
 }
-
 @keyframes copied{
     0%{
         font-size:15px;
@@ -54,6 +54,12 @@ img{
 
     }
 }
+#p{
+    transition: all 3s ease-in-out;
+}
+#p:hover{
+    margin-left:20%;
+}
 
 @media only screen and (max-width: 900px){
     h1{
@@ -61,7 +67,7 @@ img{
     }
 }
 
-/* just works in firefox*/
+/* only works in firefox*/
 @-moz-document url-prefix() {
     h1{
       color:red;
