@@ -6,7 +6,7 @@
         "coverAlt":"Blue Swede",
         "mp3": "./music/Hooked_on_a_Feeling.mp3",
         "duration":"02:47",
-        "duration_s":"1670"
+        "progressBarTime" : "1670"
     },
     {
         "songName": "Home",
@@ -15,7 +15,7 @@
         "coverAlt":"Edward Sharpe",
         "mp3": "./music/Home.mp3",
         "duration":"03:11",
-        "duration_s":"1910"
+        "progressBarTime" : "1910"
     },
     {
         "songName": "Bang Pop",
@@ -24,7 +24,7 @@
         "coverAlt":"Free Energy",
         "mp3": "./music/Bang_Pop.mp3",
         "duration":"03:41",
-        "duration_s":"1210"
+        "progressBarTime" : "2210"
     },
     {
         "songName": "She's On My Mind",
@@ -33,7 +33,7 @@
         "coverAlt":"JP Cooper",
         "mp3": "./music/She's_On_My_Mind.mp3",
         "duration":"02:59",
-        "duration_s":"1790"
+        "progressBarTime" : "1790"
     },
     {
         "songName": "Cobrastyle",
@@ -42,7 +42,7 @@
         "coverAlt":"Teddybears",
         "mp3": "./music/Cobrastyle.mp3",
         "duration":"03:00",
-        "duration_s":"1800"
+        "progressBarTime" : "1800"
     },
     {
         "songName": "White Night",
@@ -51,7 +51,7 @@
         "coverAlt":"The Postelles",
         "mp3": "./music/White_Night.mp3",
         "duration":"02:38",
-        "duration_s":"1580"
+        "progressBarTime" : "1580"
     },
     {
         "songName": "Renegades",
@@ -60,6 +60,6 @@
         "coverAlt":"X Ambassadors",
         "mp3": "./music/Renegades.mp3",
         "duration":"03:14",
-        "duration_s":"1940"
+        "progressBarTime" : "1940"
     }
 ]

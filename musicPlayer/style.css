@@ -20,13 +20,23 @@ h2{
     width: 85.6%;
     height: auto;
 }
+/*-----------------controllers (footer)-----------------------*/
+.controllers{
+    display:grid;
+    justify-content: space-around;
+    grid-template-columns:repeat(2, 17.5%) 30% repeat(2, 17.5%);
+}
 .rotate{
     transform: rotate(180deg);
+}
+#play-or-pause{
+    font-size: 50px;
 }
 .fas{
     font-size:30px;
     padding:2% 3%;
     color:#000;
+    place-self:center;
 }
 
 .track-stuff img{
@@ -34,10 +44,7 @@ h2{
     display: block;
     margin: 5% auto;
 }
-.controllers{
-    display:flex;
-    justify-content: space-around;
-}
+
 /*---------------------song line--------------------------*/
 .songline-box{
     position: relative;
@@ -86,4 +93,9 @@ h2{
 }
 .playing, .song-text{
     margin:0 7.2%
+}
+
+
+footer{
+    padding-bottom: 5%;
 }
