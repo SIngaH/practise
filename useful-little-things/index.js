@@ -57,3 +57,27 @@ document.querySelector("#copy-icon").addEventListener("click", ()=>{
     // Remove the input from the body
     document.body.removeChild(aux);
 })
+
+//saving an array in localStorage
+let array = [0, 1, 2, 3, 4, 5, 6];
+localStorage.setItem("array", JSON.stringify(array));
+let localArray = JSON.parse(localStorage.getItem("array"));
+console.log(localArray)
+
+// shuffling an array
+let Myarray = [0, 1, 2, 3, 4, 5, 6];
+shuffle(Myarray);
+function shuffle(array){
+    let ctr = array.length, temp, i;
+    // While there are elements in the array
+    while (ctr > 0) {
+        // Pick a random index
+        i = Math.floor(Math.random() * ctr);
+        // Decrease ctr by 1
+        ctr--;
+        // And swap the last element with it
+        temp = array[ctr];
+        array[ctr] = array[i];
+        array[i] = temp;
+    }
+}
