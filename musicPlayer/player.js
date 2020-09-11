@@ -1,5 +1,3 @@
-//check if music plays, do they play over each other??
-
 let play = document.querySelector(".play-or-pause");
 let next = document.querySelector(".next");
 let back = document.querySelector(".back");
@@ -17,7 +15,6 @@ window.onload = getTrack();
 
 // shuffling the array for when the shuffle btn is pushed
 let localArray = JSON.parse(localStorage.getItem("array"));
-
 if(localArray == null || localArray == undefined){
     let array = [0, 1, 2, 3, 4, 5, 6];
     let ctr = array.length, temp, i;
@@ -44,7 +41,9 @@ play.addEventListener("click", ()=>{
         player="off";
         pause();
         stopTime();
+        currentSong.pause();
     }else{
+        currentSong.play();
         play.classList.remove("fa-play");
         play.classList.add("fa-pause");
         player="on";
@@ -53,10 +52,14 @@ play.addEventListener("click", ()=>{
 })
 //next btn
 next.addEventListener("click", ()=>{
+    play.classList.remove("fa-play");
+    play.classList.add("fa-pause");
     nextIndex(index);
 })
 //back btn
 back.addEventListener("click", ()=>{
+    play.classList.remove("fa-play");
+    play.classList.add("fa-pause");
     prevIndex(index);
 })
 //repeat btn
@@ -96,7 +99,7 @@ function nextIndex(){
             index++
         }
     }
-    getTrack(index);
+    getTrack(index, "arrow");
 }
 //when back is pressed
 function prevIndex(){
@@ -113,10 +116,10 @@ function prevIndex(){
             index--;
         }
     }
-    getTrack(index);
+    getTrack(index, "arrow");
 }
 //gets the track with fetch
-function getTrack(justPaused){
+function getTrack(justPaused, arrow){
     fetch('./json/playlist.json')
     .then(response => {
         return response.json()
@@ -130,15 +133,17 @@ function getTrack(justPaused){
             `;
             songTime.innerHTML = data[index].duration;
             let lastIndex = data.length-1;
-            if(justPaused == null || justPaused == undefined){
+            if(justPaused == null || justPaused == undefined || arrow == "arrow"){
                 move(data[index].progressBarTime, 0);
                 moveTime(data[index].duration, 0);
                 localStorage.setItem("test", lastIndex);
+                currentSong.src = data[index].mp3;
             }else{
                 move(data[index].progressBarTime, null);
                 moveTime(data[index].duration, null);
                 localStorage.setItem("test", lastIndex);
             }
+            currentSong.play();
         }else{            
             inputJson.innerHTML = `
                 <h2>` + data[localArray[index]].songName + `</h2>
@@ -147,15 +152,17 @@ function getTrack(justPaused){
             `;
             songTime.innerHTML = data[localArray[index]].duration;
             let lastIndex = data.length-1;
-            if(justPaused == null || justPaused == undefined){
+            if(justPaused == null || justPaused == undefined || arrow == "arrow"){
                 move(data[localArray[index]].progressBarTime, 0);
                 moveTime(data[localArray[index]].duration, 0);
                 localStorage.setItem("test", lastIndex);
+                currentSong.src = data[localArray[index]].mp3;
             }else{
                 move(data[localArray[index]].progressBarTime, null);
                 moveTime(data[localArray[index]].duration, null);
                 localStorage.setItem("test", lastIndex);
             }
+            currentSong.play();
         }
     });
 }
@@ -218,6 +225,9 @@ function moveTime(endTime, startTimes){
         if(timeDone === endTime){
             clearInterval(theTime)
             nextIndex();
+            timer = 0;
+            timer2 = 0;
+            end = 0;
         }
     }
 }
