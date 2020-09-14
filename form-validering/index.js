@@ -143,7 +143,7 @@ form.addEventListener("submit", (e) =>{
     }else{
         age.style.border = borderGone;
     }
-    if(age.value < 17){ 
+    if(age.value < 18){ 
         errorElement.style.display="block";
         errorElement.innerHTML = "You need to be 18 or older"; 
         age.focus();	
