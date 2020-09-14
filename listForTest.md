@@ -1,3 +1,8 @@
+til at starte med kun 1 dag til html og css
+få det til at være smukt til sidst funktunalitet er vigtigere
+ttest everything
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 1. Read every PDF, md...
 2. Look over everything in the folder we get
 3. Make/open repository...
