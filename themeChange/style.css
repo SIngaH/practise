@@ -1,0 +1,15 @@
+@import url("variables.css");
+#wrapper{
+    max-width:960px;
+    margin:0 auto;
+    background-color:var(--bg-color);
+    color:var(--font-color);
+}
+a{
+    color:lime;
+}
+button{
+    background-color:lime;
+    color:black;
+    border:solid 2px black;
+}
