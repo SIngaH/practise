@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     let bgArray = ["blueviolet", "cyan", "greenyellow", "pink", "black"];
     let fontArray = ["cyan", "blueviolet", "green", "black", "white"];
-    let check = localStorage.getItem('theme');
+    let check = sessionStorage.getItem('theme');
     if(check == null || check == undefined){
         localStorage.setItem('theme', 0);
     }
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let btn = document.querySelector("button");
     if(btn !== null){
         btn.addEventListener("click", ()=>{
-            let check = localStorage.getItem('theme');
+            let check = sessionStorage.getItem('theme');
             indexCount(check);
         })
     }
@@ -19,13 +19,12 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }else{
             check++;
         }
-        localStorage.setItem('theme', check);
+        sessionStorage.setItem('theme', check);
         document.documentElement.style.setProperty('--bg-color', bgArray[check]);
         document.documentElement.style.setProperty('--font-color', fontArray[check]);
-        console.log(bgArray[check])
     }
     function startTheme(){
-        let check = localStorage.getItem('theme');
+        let check = sessionStorage.getItem('theme');
         document.documentElement.style.setProperty('--bg-color', bgArray[check]);
         document.documentElement.style.setProperty('--font-color', fontArray[check]);
     }

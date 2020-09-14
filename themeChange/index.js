@@ -5,19 +5,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }else{ 
         themeChange();
         btn.addEventListener("click", ()=>{
-            let check = localStorage.getItem('bgColor');
+            let check = sessionStorage.getItem('bgColor');
             if(check === "blueviolet"){
-                localStorage.setItem("bgColor", "cyan");
+                sessionStorage.setItem("bgColor", "cyan");
             }else if(check === "cyan"){
-                localStorage.setItem("bgColor", "blueviolet");
+                sessionStorage.setItem("bgColor", "blueviolet");
             }else{
-                localStorage.setItem("bgColor", "blueviolet");
+                sessionStorage.setItem("bgColor", "blueviolet");
             }
             themeChange();
         });
     }
     function themeChange(){
-        let check = localStorage.getItem('bgColor');
+        let check = sessionStorage.getItem('bgColor');
         if(check == "blueviolet"){
             document.documentElement.style.setProperty('--bg-color', 'cyan');
             document.documentElement.style.setProperty('--font-color', 'blueviolet');
