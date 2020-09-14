@@ -36,12 +36,18 @@ function thisFunction(){
 //https://jsfiddle.net/alvaroAV/a2pt16yq/
 document.querySelector("#copy-icon").addEventListener("click", ()=>{
     let faCopy = document.querySelector("#copy-icon");
+    let alert = document.querySelector(".alert");
       
    faCopy.classList.add("link-copied");
 
     setTimeout(() => {
       faCopy.classList.remove("link-copied")
+      alert.setAttribute("id", "alert");
     }, 2000);
+
+    setTimeout(() => {
+      alert.removeAttribute("id");
+    }, 5000);
     
     // Create an auxiliary hidden input
     var aux = document.createElement("input");

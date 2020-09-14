@@ -14,6 +14,10 @@ body{
     background-image: url("img_tree.gif"), url("paper.gif");
     background-repeat: no-repeat, repeat;*/
 }
+#wrapper{
+    max-width:1440px;
+    margin:0 auto;
+}
 /* Each New Word Has A Capital Letter */
 h1{
     text-transform: capitalize;
@@ -39,6 +43,22 @@ h2{
 }
 .link-copied{
     animation: copied 2s forwards linear;
+}
+.alert{
+    display:none;
+    height:200px;
+    width:90%;
+    margin:0 5%;
+    position:relative;
+    background-color: blueviolet;
+}
+#alert{
+    display:block
+}
+#the-alert{
+    position: absolute;
+    top:33%;
+    left:42%;
 }
 @keyframes copied{
     0%{
