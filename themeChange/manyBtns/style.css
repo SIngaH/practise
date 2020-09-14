@@ -1,0 +1,30 @@
+@import url("variables.css");
+#wrapper{
+    max-width:960px;
+    margin:0 auto;
+    background-color:var(--bg-color);
+    color:var(--font-color);
+}
+a{
+    color:black;
+}
+.blueBtn{
+    background-color:blueviolet;
+    color:black;
+    border:solid 2px black;
+}
+.greenBtn{
+    background-color:lime;
+    color:black;
+    border:solid 2px black;
+}
+.pinkBtn{
+    background-color:palevioletred;
+    color:black;
+    border:solid 2px black;
+}
+.crimsonBtn{
+    background-color:crimson;
+    color:black;
+    border:solid 2px black;
+}
