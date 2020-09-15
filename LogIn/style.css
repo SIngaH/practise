@@ -1,0 +1,35 @@
+#wrapper{
+    margin:0 auto;
+    max-width:960px;
+    background-color: lime;
+    text-align: center;
+}
+.main{
+    display:none;
+}
+.sign-up, .log-in, .log-out{
+    color:black;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.hide{
+    display:none;
+}
+#log-in form, #sign-up form{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.form_input, button{
+    margin:0.5% auto;
+    padding:0.5%;
+}
+.form_input{
+    width:30%;
+}
+button{
+    width:31%;
+    background-color: blueviolet;
+    color:white;
+    border:solid 2px white;
+}
