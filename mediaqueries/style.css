@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    margin:0 auto;
+    max-width:1440px;
+    background-color: blueviolet;
+    color:white;
+    overflow: hidden;
+}
+a{
+    color:cyan;
+    text-decoration:none;
+}
+header{
+    background-color: cyan;
+    text-align: center;
+    padding:3% 0;
+    color:black;
+}
+/*--------------------nav and footer--------------------*/
+nav, footer{
+    background-color: crimson;
+    padding:2% 0;
+}
+nav ul li a:hover{
+    color:lime;
+    text-decoration:underline;
+}
+footer i:hover{
+    color:lime;
+    animation: navFooter infinite 2s;
+}
+@keyframes navFooter{
+    from{
+        transform:rotate(0deg);
+        -ms-transform:rotate(0deg); /* IE 9 */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari and Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+    to{
+        transform:rotate(360deg);
+        -ms-transform:rotate(360deg); /* IE 9 */
+        -moz-transform:rotate(360deg); /* Firefox */
+        -webkit-transform:rotate(360deg); /* Safari and Chrome */
+        -o-transform:rotate(360deg); /* Opera */
+    }
+}
+#ul, .footerA{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:row;
+}
+li{
+    list-style:none;
+}
+.dropdown-menu{
+    display:none;
+    justify-content: center;
+    flex-direction: row;
+}
+#dropDownIcon{
+    text-align: center;
+    color:black;
+    font-size:45px;
+}
+.dropDown-rotate{
+    transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg); /* IE 9 */
+    -moz-transform:rotate(-90deg); /* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari and Chrome */
+    -o-transform:rotate(-90deg); /* Opera */
+}
+footer{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+}
+footer h2{
+    padding-bottom: 2%;
+}
+.footerA{
+    font-size:35px;
+}
+/*--------------------main sections--------------------*/
+main{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:1%;
+    margin:2%;
+}
+section{
+    border:solid 2px black;
+}
+/*--------------------first--------------------*/
+#first{
+    width:100%;
+    display:grid;
+    grid-template-columns: 44% 54%;
+    grid-template-rows: 15% 72% 10%;
+    gap:2%;
+    overflow: hidden;
+}
+#first h2{
+    grid-column:2;
+    place-self: center;
+}
+#first img{
+    grid-column:1;
+    grid-row:1/span 4;
+    height:100%;
+}
+#first a{
+    grid-column:2;
+    grid-row:3;
+    place-self:center start;
+}
+#first i{
+    grid-column:2;
+    grid-row:3;
+    place-self:center end;
+    padding-right:2%;
+}
+#first p{
+    grid-column:2;
+    padding:0;
+}
+/*--------------------second--------------------*/
+#second{
+    display:flex;
+    justify-content:space-between;
+    overflow:hidden;
+}
+#second img{
+    height:100%;
+    padding-right:2%;
+}
+.section-text{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    width: 54%;
+    padding:0 2%;
+}
+.like-link{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#second i{
+    padding-right:5%;
+}
+/*--------------------third--------------------*/
+#third{
+    display:grid;
+    grid-template-columns:40% 60%;
+}
+#third img{
+    grid-row:1;
+    grid-column:1;
+    width:100%;
+}
+#third h2{
+    grid-column:2;
+    grid-row:1;
+    place-self:start center;
+    padding:2% 0;
+}
+#third p{
+    grid-column:2;
+    grid-row:1;
+    place-self:center;
+    padding:0 2%;
+}
+#third a, #third i{
+    grid-row:2;
+    grid-column:1;
+    padding:2% 0;
+}
+#third i{
+    place-self: end;
+}
+/*--------------------fourth--------------------*/
+#fourth{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:row-reverse;
+}
+#fourth .section4-text{
+    padding:0 2%;
+    width:59%;
+}
+#fourth img{
+    height:90%;
+}
+#fourth h2{
+    text-align:center;
+    padding-top:2%;
+}
+#fourth a{
+    padding-right:60%;
+}
+#fourth p {
+    padding:7% 0;
+}
+/* --------------------------mediaqueries-------------------------- */
+@media only screen and (max-width: 500px){
+    .dropdown-menu{
+        display:flex;
+    }   
+    #ul{
+        display:none;
+        flex-direction: column;
+    }
+    #ul li{
+        padding: 0 0 1% 65%;
+    }
+    nav{
+        padding:0;
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+    }
+    nav h2{
+        padding:1.5% 3% 0 0;
+        color:black;
+    }
+}
