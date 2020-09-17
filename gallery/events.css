@@ -1,0 +1,28 @@
+.hide{
+    display:none;
+}
+#events-of-the-month{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    margin:5% 0;
+}
+.images{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom:5%;
+}
+.events-progress-boxes{
+    display:flex;
+    justify-content:center;
+}
+.progress-boxes .events-progress-box{
+    margin:0 1%;
+    width:10px;
+    height:10px;
+    background-color:#fff;
+}
+#pink{
+    background-color:red;
+}

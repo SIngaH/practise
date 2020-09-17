@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+/*document.addEventListener("DOMContentLoaded", ()=>{
     let boxes = document.querySelectorAll(".progress-box");
     let testimonials = document.querySelector(".testimonials-api-info");
     
@@ -70,4 +70,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
         });
     }
-});
+});*/
