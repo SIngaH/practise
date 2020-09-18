@@ -3,16 +3,23 @@ liklega i profinu
     god kodestruktur
     responsivt
     flexbox og grids
-    adoptivt layout
+    adaptivt layout
     form validering
     general fejlhåntering (feedback, ikke alertbox)
     slider
     bibliotek hvorfor bruger jeg pakker (noget jeg ikke har skrivet selv)
     url params
     kanban
-    Host på Heroku
+    Host på Heroku eller netlify
     CRUD (create, read, update, delete)
     Authentication API
     paging
 
-    mq + login + delete
+
+    screen sizes
+    320
+    480
+    760
+    960
+    1200
+    1600
