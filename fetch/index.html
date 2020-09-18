@@ -36,15 +36,24 @@
             </div>
         </form>
     </section>
-    <secion class="many-to-one">
+    <section class="many-to-one">
         <!-- many, if you click one you go to a page with one -->
-    </secion>
+    </section>
+    <section class="delete">
+        <h4>Delete</h4>
+        <form method="post" id="form-delete" novalidate>
+            <input type="email" name="email" placeholder="enter your email" id="delete-email">
+            <button id="button-delete">subscribe</button>
+            <p id="error"></p>
+        </form>
+    </section>
 
     <script src="js/get.js"></script>
     <script src="js/multible-get.js"></script>
     <script src="js/post.js"></script>
     <script src="js/post-many.js"></script>
     <script src="js/many-lead-to-one.js"></script>
+    <script src="js/delete.js"></script>
 
 </body>
 </html>
