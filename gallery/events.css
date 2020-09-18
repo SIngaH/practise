@@ -12,12 +12,17 @@
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom:5%;
+    width:100%;
+}
+.image{
+    width:45%;
+    height:auto;
 }
 .events-progress-boxes{
     display:flex;
     justify-content:center;
 }
-.progress-boxes .events-progress-box{
+.progress-boxes .aBox{
     margin:0 1%;
     width:10px;
     height:10px;
