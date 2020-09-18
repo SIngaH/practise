@@ -91,3 +91,11 @@ function shuffle(array){
     }
     return array;
 }
+
+//every one exept the current changes
+
+const thisarray = [0, 1, 2, 3, 4];
+thisarray.forEach((val, i) => {
+  if (i !== 3) thisarray[i] = 9;
+});
+console.log(thisarray);
