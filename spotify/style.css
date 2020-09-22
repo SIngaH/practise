@@ -1,0 +1,19 @@
+#wrapper{
+    margin:0 auto;
+    max-width:960px;
+    background-color:blue;
+    text-align: center;
+}
+
+header, footer, nav{
+    background-color: blueviolet;
+    padding:1% 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
