@@ -113,7 +113,7 @@ section{
 #first img{
     grid-column:1;
     grid-row:1/span 4;
-    height:100%;
+    width:100%;
 }
 #first a{
     grid-column:2;
