@@ -14,6 +14,8 @@ let agree = document.querySelector(".form__checkbox");
 let select = document.querySelector(".form__select");
 let zipCode = document.querySelector(".form__zip");
 let date = document.querySelector(".form__date");
+let password = document.querySelector(".form_password");
+let password2 = document.querySelector(".form_password2");
 let border = "solid 1px red";
 let borderGone = "solid 1px #000";
 
@@ -224,6 +226,71 @@ form.addEventListener("submit", (e) =>{
         return false;
     }else{
         date.style.border = borderGone;
+    }
+/*----------------Password-----------------------*/
+    let nbr = /[0-9]/;
+    let letters = /[a-z]/;
+    let Letters = /[A-Z]/;
+
+    if(password.value === "" || password.value == null){
+        errorElement.style.display="block";
+        errorElement.innerHTML = "A password is required";
+        password.focus();
+        password.style.border = border;
+        console.log(password.value)
+        return false;
+    }else{
+        password.style.border = borderGone;
+    }
+
+    if(password.value.length < 5){
+        errorElement.style.display="block";
+        errorElement.innerHTML = "Your password must be longer than five characters";
+        password.focus();
+        password.style.border = border;
+        return false;
+    }else{
+        password.style.border = borderGone;
+    }
+
+    if(!letters.test(password.value)) {
+        errorElement.style.display="block";
+        errorElement.innerHTML = "Password must contain at least one lowercase letter";
+        password.focus();
+        password.style.border = border;
+        return false;
+    }else{
+        password.style.border = borderGone;
+    }
+
+    if(!Letters.test(password.value)) {
+        errorElement.style.display="block";
+        errorElement.innerHTML = "Password must contain at least one uppercase letter";
+        password.focus();
+        password.style.border = border;
+        return false;
+    }else{
+        password.style.border = borderGone;
+    }
+
+    if(!nbr.test(password.value)){
+        errorElement.style.display="block";
+        errorElement.innerHTML = "Your password must contain al least one number";
+        password.focus();
+        password.style.border = border;
+        return false;
+    }else{
+        password.style.border = borderGone;
+    }
+
+    if(password.value != password2.value){
+        errorElement.style.display="block";
+        errorElement.innerHTML = "The passwords need to match";
+        password2.focus();
+        password2.style.border = border;
+        return false; 
+    }else{
+        password2.style.border = borderGone;
     }
 
     errorElement.style.display="block";
