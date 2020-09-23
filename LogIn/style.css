@@ -4,9 +4,6 @@
     background-color: lime;
     text-align: center;
 }
-.main{
-    display:none;
-}
 .sign-up, .log-in, .log-out{
     color:black;
     text-decoration:underline;

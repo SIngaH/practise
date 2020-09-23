@@ -11,7 +11,7 @@ let signUpP = document.querySelector(".sign-up");
 let LoggedIn = sessionStorage.getItem("LoggedIn");
 let logOut = document.querySelector(".log-out");
 
-if(LoggedIn === "false"){
+if(LoggedIn === "false" || LoggedIn === null){
     main.classList.add("hide");
     logIn.classList.remove("hide");
 }else{
