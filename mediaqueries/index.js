@@ -27,4 +27,13 @@ dropDown.addEventListener("click", ()=>{
 /* If you go to a bigger screen width while dropdown is closed, ul is still display:none */
 if(screen.width > 500){
     ul.style.display = "flex";
+    console.log(screen.width)
+
+}
+
+if(screen.width < 500){
+    console.log(screen.width)
+    document.querySelector("header").style.backgroundColor = "red"
+}else{
+    document.querySelector("header").style.backgroundColor = "cyan"
 }
