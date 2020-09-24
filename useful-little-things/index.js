@@ -72,7 +72,8 @@ let array = [0, 1, 2, 3, 4, 5, 6];
 localStorage.setItem("array", JSON.stringify(array));
 let localArray = JSON.parse(localStorage.getItem("array"));
 console.log(localArray)
-
+// to push into an array
+array.push(2);
 // shuffling an array
 let Myarray = [0, 1, 2, 3, 4, 5, 6];
 shuffle(Myarray);
@@ -93,9 +94,67 @@ function shuffle(array){
 }
 
 //every one exept the current changes
-
 const thisarray = [0, 1, 2, 3, 4];
 thisarray.forEach((val, i) => {
   if (i !== 3) thisarray[i] = 9;
 });
 console.log(thisarray);
+
+//do something once
+smtn();
+function smtn() {
+  var executed = false;
+      if (!executed) {
+          executed = true;
+          console.log("hihi")
+      }
+}
+
+//do something when the screen is smaller than 500px - you need to refresh the site to see the change
+if(screen.width > 500){
+  ul.style.display = "flex";
+}
+
+//clock
+let clock = document.querySelector(".clock p");
+setInterval(() => {
+  runClock();
+}, 1000);
+
+function runClock(){
+  let date = new Date();  
+  let dateTime = date.getHours();
+  let dateMinutes = date.getMinutes();
+  let dateSeconds = date.getSeconds();
+  if(dateSeconds.length === 1){
+    dateSeconds = "0" + dateSeconds
+    clock.innerHTML = dateTime + ":" + dateMinutes + ":0" + dateSeconds;
+  }else{
+    clock.innerHTML = dateTime + ":" + dateMinutes + ":" + dateSeconds;
+  }
+}
+
+//timer for stuff like music
+let timer = document.querySelector(".timer p");
+setInterval(() => {
+  runTimer();
+}, 1000);
+
+let minutes = 0;
+let seconds = 0;
+function runTimer(){
+  seconds++;
+  if(seconds > 59){
+    minutes++;
+    seconds = 0;
+  }
+  if(seconds < 10 && minutes < 10){
+    timer.innerHTML = "0" + minutes + ":0" + seconds;
+  }else if(minutes < 10){
+    timer.innerHTML = "0" + minutes + ":" + seconds;
+  }else if(seconds < 10){
+    timer.innerHTML = minutes + ":0" + seconds;
+  }else{
+    timer.innerHTML = minutes + ":" + seconds;
+  }
+}
