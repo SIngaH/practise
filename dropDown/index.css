@@ -1,0 +1,21 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#wrapper{
+    max-width:320px;
+    margin:0 auto;
+    background-color:crimson;
+    padding:0 2%;
+}
+li{
+    list-style: none;
+    padding-left:5%
+}
+h2{
+    cursor: pointer;
+}
+.hide{ 
+    display:none;
+}
