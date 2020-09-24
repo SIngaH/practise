@@ -209,6 +209,33 @@ section{
     padding:7% 0;
 }
 /* --------------------------mediaqueries-------------------------- */
+@media only screen and (max-width: 1243px){
+    #third p{
+        margin-top: 13%;
+    }
+    h2{
+        font-size: 22px;
+    }
+    p{
+        font-size:15px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    #fourth a {
+        padding-right: 54%;
+    }
+}
+@media only screen and (max-width: 1126px){
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size:13px;
+    }
+    a{
+        font-size: 15px;
+    }
+}
 @media only screen and (max-width: 500px){
     .dropdown-menu{
         display:flex;
