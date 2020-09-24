@@ -1,0 +1,32 @@
+.playing {
+  padding-right: 42%; }
+
+#wrapper {
+  background-image: url("../../images/player-bgimg.jpg");
+  background-repeat: no-repeat;
+  height: 100%; }
+
+main {
+  display: grid;
+  padding-bottom: 0; }
+
+.player-circle-img {
+  place-self: center;
+  margin-bottom: 16px; }
+
+.name {
+  padding-top: 32px; }
+
+.song-playing {
+  text-align: center; }
+
+.song-line {
+  border: solid 2px var(--light-pink);
+  margin: 77px 20px 30px 20px;
+  width: 84%; }
+
+@media screen and (max-width: 360px) {
+  .player-circle-img {
+    width: 98%; }
+  .song-line {
+    width: 89%; } }

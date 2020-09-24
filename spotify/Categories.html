@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>I Play Music</title>
+    <link rel="stylesheet" href="assets/css/style-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/categories/categories.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <a href="index.html"><i class="fas fa-chevron-left navicon"></i></a>
+            <h3>Categories</h3>
+            <a href=""><i class="fas fa-search navicon"></i></a>
+        </nav>
+        <main>
+            <h1>Categories</h1>
+            <section class="categories">
+
+            </section>
+        </main>
+                <footer>
+            <a href="albums.html"><img src="assets/images/icon.svg" alt="Albums" class="heartrate"></a>
+            <a href="playlists.html"><i class="fas fa-microphone-alt footericon microphone"></i></a>
+            <a href="index.html">
+                <div class="circle">
+                    <img src="assets/images/circlesBlack.svg" alt="Features" id="circleWhite">
+                </div>
+            </a>
+            <i class="fas fa-adjust footericon adjust"></i>
+            <a href="categories.html"><i class="fas fa-cog footericon categoriesIcon"></i></a>            
+        </footer>
+    </div>
+</div>
+<template class="category">
+    <h4 class="show-ul"></h4>
+    <ul class="category-ul hide">
+        <li class="li li1"><a href="">First <i class="fas fa-chevron-right"></i></a></li>
+        <li class="li li2"><a href="">Second <i class="fas fa-chevron-right"></i></a></li>
+        <li class="li li3"><a href="">Third <i class="fas fa-chevron-right"></i></a></li>
+    </ul>
+</template>
+    <script type="module" src="assets/js/fetch-categories.js"></script>
+    <script src="assets/js/categories.js"></script>
+    <script src="assets/js/color-change.js"></script> 
+    <script src="https://kit.fontawesome.com/2677b557d6.js"></script>
+    <script type="module" src="assets/js/fetch.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.top-50 {
+  text-align: center; }
+
+.songs {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; }
+  .songs .song a {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr repeat(2, 2fr);
+    margin: 19px 10px;
+    text-decoration: none; }
+    .songs .song a .circle {
+      grid-row: 1/span 2;
+      grid-column: 1;
+      background: var(--pink-gradient-circle);
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: grid; }
+      .songs .song a .circle img {
+        place-self: center;
+        width: 18px; }
+    .songs .song a .time {
+      grid-row: 1/span 2;
+      grid-column: 3;
+      place-self: center end; }
+
+.button {
+  margin-bottom: 100px; }
+  .button a {
+    width: 375px;
+    display: grid;
+    text-decoration: none; }
+    .button a #listen-all {
+      cursor: pointer;
+      place-self: center;
+      margin: 15px 0; }

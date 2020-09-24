@@ -21,6 +21,7 @@ body{
 /* Each New Word Has A Capital Letter */
 h1{
     text-transform: capitalize;
+    -webkit-text-stroke: 1px black;
 }
 /* ALL CAPS */
 h2{

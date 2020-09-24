@@ -1,0 +1,8 @@
+.song-line {
+  animation: songLength 183s forwards linear; }
+
+@keyframes songLength {
+  from {
+    width: 0%; }
+  to {
+    width: var(--max-width-song-line); } }

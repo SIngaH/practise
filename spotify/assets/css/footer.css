@@ -1,0 +1,27 @@
+footer {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  background-color: var(--footer);
+  bottom: 0%;
+  width: 100%;
+  max-width: 375px;
+  z-index: 10;
+  padding: 7px 0;
+  box-shadow: 0px -1px 31px var(--footer-shadow); }
+  footer .fas {
+    margin: 15px 0; }
+  footer .heartrate {
+    margin: 15px 0; }
+  footer .adjust {
+    cursor: pointer; }
+  footer .circle {
+    background: var(--pink-gradient-circle);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: grid; }
+    footer .circle img {
+      place-self: center;
+      width: 30px; }

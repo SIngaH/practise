@@ -7,34 +7,48 @@
     <title>I Play Music</title>
     <link rel="stylesheet" href="assets/css/style-all.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="assets/css/index/index.css">
+    <link rel="stylesheet" href="assets/css/albums/albums.css">
 </head>
 <body>
     <div id="wrapper">
         <nav>
-            <a href="index.html"><i class="fas fa-chevron-left navicon"></i></a>
-            <h3>Featured</h3>
+            <a href="Categories.html"><i class="fas fa-chevron-left navicon"></i></a>
+            <h3>Music</h3>
             <a href=""><i class="fas fa-search navicon"></i></a>
         </nav>
         <main>
-            <h1>Featured</h1> 
-            <section class="featured">
+            <h1>All Albums</h1> 
+            <section class="albums">
+                <div class="album-text">
+                    <h4>Featured albums</h4>
+                    <h4 class="veiw-all"><a href="">Veiw All</a></h4>
+                </div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                    </div>
+                </div>
+            <div class="album-text">
+                <h4>New Releases</h4>
+                <h4 class="veiw-all"><a href="">Veiw All</a></h4>
+            </div>
+            <section class="songs">
                 
             </section> 
         </main>
         <footer>
-    <a href="albums.html"><img src="assets/images/icon.svg" alt="Albums" class="heartrate"></a>
+    <a href="albums.html"><img src="assets/images/iconWhite.svg" alt="Albums" class="heartrate" id="icon-change"></a>
     <a href="playlists.html"><i class="fas fa-microphone-alt footericon microphone"></i></a>
     <a href="index.html">
-        <div class="circle" id="index-circle">
-            <img src="assets/images/circlesWhite.svg" alt="Featured" class="circles" id="index-circles">
+        <div class="circle">
+            <img src="assets/images/circlesBlack.svg" alt="Featured" class="circles" id="circleWhite">
         </div>
     </a>
     <i class="fas fa-adjust footericon adjust"></i>
     <a href="categories.html"><i class="fas fa-cog footericon categoriesIcon"></i></a>            
 </footer>
 </div>
-        <script type="module" src="assets/js/fetch-index.js"></script>
+        <script type="module" src="assets/js/fetch-albums.js"></script>
         <script src="assets/js/color-change.js"></script> 
     <script src="https://kit.fontawesome.com/2677b557d6.js"></script>
     <script type="module" src="assets/js/fetch.js"></script>

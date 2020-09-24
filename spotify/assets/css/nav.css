@@ -1,0 +1,7 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 19px; }
+  nav .navicon {
+    color: var(--not-background); }

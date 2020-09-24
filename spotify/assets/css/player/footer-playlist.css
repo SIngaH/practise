@@ -1,0 +1,13 @@
+.player-footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 50px;
+  margin: 0 25px; }
+  .player-footer .littlebtns {
+    height: 15px;
+    width: auto;
+    margin-top: 8%; }
+  .player-footer .play {
+    height: 75px; }
+  .player-footer .previous-song, .player-footer .rewind {
+    transform: rotate(180deg); }

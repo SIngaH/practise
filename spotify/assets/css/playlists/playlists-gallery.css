@@ -1,0 +1,14 @@
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 465px;
+  margin-left: -25%; }
+  .swiper-wrapper img {
+    width: 155px;
+    height: 155px;
+    margin: 15px; }
+
+@media screen and (max-width: 320px) {
+  .swiper-wrapper {
+    margin-left: -34%; } }
