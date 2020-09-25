@@ -9,7 +9,8 @@ MAKS 5 SIDER (skal være pdf)
 **Gulp** - Med Gulp kan jeg dele opgaven op, som gør det nemmere at få overblik over hele opgaven. Gulp-imagemin minimerer også billeder, som gør siden hurtigere. Jeg har valgt ikke at bruge babel, fordi jeg har ofte haft problemer med det, ofte ændres filerne ikke rigtigt. Det har jeg ikke tid til under eksamen.
 
 **Flexbox of Grids** - Jeg brugte Flexbox mange steder, for eksempet i nav baren, fordi det gør meget nemmere og hurtigere at sætte den op. Jeg brugte også Grids ……………………………………..Grids ændres mindre i forskellige skærm størrelser. Det virker fint med Flexbox i nav, men de mere komplicerede designer er det bedre at bruge Grids. De er også nemmere at manipulere med mediaqueries.
-Javascript - Javascript har jeg brugt for alt funktionaliteten, fordi det har jeg godt styr på og man kan lave så meget med Javascript. 
+
+**Javascript** - Javascript har jeg brugt for alt funktionaliteten, fordi det har jeg godt styr på og man kan lave så meget med Javascript. 
 …………………..
 ___
 
@@ -40,9 +41,9 @@ ___
         3. Aflever siden
         4. Arbejd på de sidste ting på siden
         5. Aflever igen før klokken 15:10
-___
 
 Jeg starter på den nemmeste for at give mig selv selvtillid, som gør det nemmere at lave det svære ting senere. Hvis jeg følger planen kan jeg være sikker på at jeg kan nå så meget som mugligt og så ved jeg også at jeg har i hvert faldt lidt af hvert (HTML, CSS, JS, API, mediaqueries).
+
 Så har jeg også et kanban bord på trello: https://trello.com/b/4qWBh2bL/eksamens-kanban
 ___
 
