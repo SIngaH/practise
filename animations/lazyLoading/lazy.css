@@ -1,0 +1,15 @@
+.imgs{
+    height:100%;
+    overflow: hidden;
+    place-self:center;
+}
+.space{
+    height:500px;
+}
+.images{
+    display:grid;
+    grid-template-rows:100%;
+    grid-template-columns: repeat(3, 30%);
+    gap:1%;
+    height: 217px;
+}

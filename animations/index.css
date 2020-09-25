@@ -44,3 +44,60 @@ body{
         opavity:100%;
     }
 }
+
+footer{
+    width:20%;
+    height:30%;
+    background-color:purple;
+    border:solid 2px black;
+    margin:0 auto 5% auto;
+    padding:2%;
+    text-align:center;
+    color:cyan;
+}
+button{
+    background-color: cyan;
+    border: solid 1px purple;
+}
+.hover{
+    animation: boxChange 2s forwards linear;
+    transition: transform .5s ease-out;
+}
+.btn-hover{
+    animation: buttonChange 2s forwards linear;
+    transition: transform .5s ease-out;
+}
+@keyframes boxChange{
+    0% {
+        width:20%;
+        height:30%;
+        background-color: purple;
+        color:cyan;
+    }
+    50%{
+        width:50%;
+        height:60%;
+        background-color: cyan;
+        color:purple;
+    }
+    100%{
+        width:20%;
+        height:30%;
+        background-color: purple;
+        color:cyan;
+    }
+}
+@keyframes buttonChange{
+    0%{
+        background-color: cyan;
+        border: solid 1px black;
+    }
+    50%{
+        background-color: purple;
+        color:cyan;
+    }
+    100%{
+        background-color: cyan;
+        border: solid 1px black;
+    }
+}
