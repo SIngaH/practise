@@ -30,16 +30,16 @@ ___
 4. Installere Gulp
 5. Begynd på min plan
     1. Lav HTML og CSS for den første side (en sektion ad gangen)
-        i. Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
-        b. Lav JS for den første side (start med det nemmeste)
-        c. Medie queries for den første side
-        d. Gentag med andre sider
+    2. Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
+    3. Lav JS for den første side (start med det nemmeste)
+    4. Medie queries for den første side
+    5. Gentag med andre sider
     6. Den sidste dag
-        a. Vær sikker på at jeg har i hvert fald lidt af hvert 
-        b. Lav dokumentationen
-        c. Aflever siden
-        d. Arbejd på de sidste ting på siden
-        e. Aflever igen før klokken 15:10
+        1. Vær sikker på at jeg har i hvert fald lidt af hvert 
+        2.Lav dokumentationen
+        3. Aflever siden
+        4. Arbejd på de sidste ting på siden
+        5. Aflever igen før klokken 15:10
 ___
 
 Jeg starter på den nemmeste for at give mig selv selvtillid, som gør det nemmere at lave det svære ting senere. Hvis jeg følger planen kan jeg være sikker på at jeg kan nå så meget som mugligt og så ved jeg også at jeg har i hvert faldt lidt af hvert (HTML, CSS, JS, API, mediaqueries).
