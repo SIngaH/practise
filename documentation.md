@@ -50,3 +50,7 @@ ___
 Jeg brugte **gulp** for at køre mine andre pakker, **gulp-ejs** og **gulp-rename** brugte jeg for at ændre ejs filer til html, **gulp-connect** for at køre webserver med liveReload, **gulp-sass** brugte jeg for at ændre scss til css, **gulp-imagemin** brugte jeg for at minimere billedere, jeg brugte **node-sass** fordi det er et bibliotek som giver binding fra Node.js til LibSass som er C-versionen af Sass. Den sidste pakke jeg brugte var **prettier** for at jeg skal ikke tænke for meget på hvordan koden ser ud fordi prettier gør det for mig.
 
 
+## testing this fucking shit because my teacher is a fucking asshole
+1. one
+2. two
+3. three
