@@ -24,10 +24,10 @@ ___
 
 ## Hvad jeg lavede og hvorfor
 **Mit plan for eksamen**
-    1. Læs over alt som følger med eksamen
-    2. Kigge på alle de filer som vi fik med eksamen
-    3. Lav/Åbne mit github repository
-    4. Installere Gulp
+1. Læs over alt som følger med eksamen
+2. Kigge på alle de filer som vi fik med eksamen
+3. Lav/Åbne mit github repository
+4. Installere Gulp
     5. Begynd på min plan
         a. Lav HTML og CSS for den første side (en sektion ad gangen)
         i. Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
@@ -48,9 +48,3 @@ ___
 
 ## Pakkerne jeg brugte
 Jeg brugte **gulp** for at køre mine andre pakker, **gulp-ejs** og **gulp-rename** brugte jeg for at ændre ejs filer til html, **gulp-connect** for at køre webserver med liveReload, **gulp-sass** brugte jeg for at ændre scss til css, **gulp-imagemin** brugte jeg for at minimere billedere, jeg brugte **node-sass** fordi det er et bibliotek som giver binding fra Node.js til LibSass som er C-versionen af Sass. Den sidste pakke jeg brugte var **prettier** for at jeg skal ikke tænke for meget på hvordan koden ser ud fordi prettier gør det for mig.
-
-
-## testing this fucking shit because my teacher is a fucking asshole
-1. one
-2. two
-3. three
