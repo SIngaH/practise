@@ -24,27 +24,29 @@ ___
 
 ## Hvad jeg lavede og hvorfor
 **Mit plan for eksamen**
-    1.	Læs over alt som følger med eksamen
-    2.	Kigge på alle de filer som vi fik med eksamen
-    3.	Lav/Åbne mit github repository
-    4.	Installere Gulp
-    5.	Begynd på min plan
-        a.	Lav HTML og CSS for den første side (en sektion ad gangen)
-        i.	Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
-        b.	Lav JS for den første side (start med det nemmeste)
-        c.	Medie queries for den første side
-        d.	Gentag med andre sider
-    6.	Den sidste dag
-        a.	Vær sikker på at jeg har i hvert fald lidt af hvert 
-        b.	Lav dokumentationen
-        c.	Aflever siden
-        d.	Arbejd på de sidste ting på siden
-        e.	Aflever igen før klokken 15:10
+    1. Læs over alt som følger med eksamen
+    2. Kigge på alle de filer som vi fik med eksamen
+    3. Lav/Åbne mit github repository
+    4. Installere Gulp
+    5. Begynd på min plan
+        a. Lav HTML og CSS for den første side (en sektion ad gangen)
+        i. Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
+        b. Lav JS for den første side (start med det nemmeste)
+        c. Medie queries for den første side
+        d. Gentag med andre sider
+    6. Den sidste dag
+        a. Vær sikker på at jeg har i hvert fald lidt af hvert 
+        b. Lav dokumentationen
+        c. Aflever siden
+        d. Arbejd på de sidste ting på siden
+        e. Aflever igen før klokken 15:10
 ___
 
 Jeg starter på den nemmeste for at give mig selv selvtillid, som gør det nemmere at lave det svære ting senere. Hvis jeg følger planen kan jeg være sikker på at jeg kan nå så meget som mugligt og så ved jeg også at jeg har i hvert faldt lidt af hvert (HTML, CSS, JS, API, mediaqueries).
 Så har jeg også et kanban bord på trello: https://trello.com/b/4qWBh2bL/eksamens-kanban
-Pakkerne jeg brugte
-Jeg brugte gulp for at køre mine andre pakker, gulp-ejs og gulp-rename brugte jeg for at ændre ejs filer til html, gulp-connect for at køre webserver med liveReload, gulp-sass brugte jeg for at ændre scss til css, gulp-imagemin brugte jeg for at minimere billedere, jeg brugte node-sass fordi det er et bibliotek som giver binding fra Node.js til LibSass som er C-versionen af Sass. Den sidste pakke jeg brugte var prettier for at jeg skal ikke tænke for meget på hvordan koden ser ud fordi prettier gør det for mig.
+___
+
+## Pakkerne jeg brugte
+Jeg brugte **gulp** for at køre mine andre pakker, **gulp-ejs** og **gulp-rename** brugte jeg for at ændre ejs filer til html, **gulp-connect** for at køre webserver med liveReload, **gulp-sass** brugte jeg for at ændre scss til css, **gulp-imagemin** brugte jeg for at minimere billedere, jeg brugte **node-sass** fordi det er et bibliotek som giver binding fra Node.js til LibSass som er C-versionen af Sass. Den sidste pakke jeg brugte var **prettier** for at jeg skal ikke tænke for meget på hvordan koden ser ud fordi prettier gør det for mig.
 
 
