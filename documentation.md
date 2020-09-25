@@ -28,8 +28,8 @@ ___
 2. Kigge på alle de filer som vi fik med eksamen
 3. Lav/Åbne mit github repository
 4. Installere Gulp
-    5. Begynd på min plan
-        a. Lav HTML og CSS for den første side (en sektion ad gangen)
+5. Begynd på min plan
+    ..* Lav HTML og CSS for den første side (en sektion ad gangen)
         i. Lav det så det ser okay ud og så gå videre (jeg kan gøre det bedre hvis jeg er færdig tideligt)
         b. Lav JS for den første side (start med det nemmeste)
         c. Medie queries for den første side
